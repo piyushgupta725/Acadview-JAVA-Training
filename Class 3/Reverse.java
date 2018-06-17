@@ -1,12 +1,17 @@
+import java.util.Scanner;
 class Reverse{
-	public static void main(String[] args)
-	{ int no=564;
-	int a=no%10;
-	no=no/10;
-	int b=no%10;
-	no=no/10;
-	int c=no%10;
-	System.out.println("the rversed digit is"+a +b +c );
+	public static void main(String[] args){ 
+	int reverse=0;
+    System.out.println("enter any number");
+	Scanner sc = new Scanner(System.in);
+	int n = sc.nextInt();
+	while(n!=0)
+	{
+		int i=n%10;
+		 reverse = (reverse*10)+i;
+		 n=n/10;
+	}
+	System.out.println("the reversed digit is" +reverse );
 	
 	}
 }

@@ -9,7 +9,7 @@
    
 	for( i=0;i<length;i++)
 	{for( j=1;j<=length-i;j++)
-		{ s= str.substring(i, i+j);
+		{ s= str.substringln(i, i+j);
 	     System.out.println(s);
 	}
   }

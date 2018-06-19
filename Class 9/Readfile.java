@@ -7,7 +7,7 @@ class Readfile{
 		FileInputStream fin = new FileInputStream("E:\\abc.txt");
 		while((b =fin.read()) != -1)
 		{
-			System.out.println((char) b);
+			System.out.print((char) b);
 		}
 		}
 		catch(Exception e){System.out.println(e);}

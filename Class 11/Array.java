@@ -1,31 +1,20 @@
 import java.io.*;
 import java.util.Scanner;
-
 class Array{
 	public static void main(String[] args){
 		My m = new My();
-		m.addElements(1);
-		m.addElements(2);
-		m.addElements(3);
-		m.addElements(4);
-		m.addElements(5);
-		m.addElements(6);
-		m.addElements(7);
-		m.addElements(8);
-		m.addElements(9);
-		m.addElements(10);
-		m.addElements(11);
-		
+		m.add(1);
+		m.add(2);
+		m.add(3);
+		m.add(4);
 		m.display();
-		
+		}
 	}
-	
-}
 class My{
-	static int defaultVal = 5;
+	static int defaultVal = 3;
 	static int i = 0;
 	int arr1[] = new int[defaultVal];
-		void addElements(int value){
+		void add(int value){
 	
 		if(i>=defaultVal){
 				defaultVal = (int)arr1.length*2;
@@ -38,16 +27,11 @@ class My{
 				arr1[i] = value;
 				i++; 
 		}
-		
-				
 		else{
 			arr1[i] = value;
 			i++;
 		}
-		
-		
-	
-}
+		}
 void display(){
 	for( int k=0;k<i;k++){			
 		 System.out.println(arr1[k]);	
